@@ -4,15 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Crazy Code</title>
+  <title>使用 Sublime Text 写 Markdown | Crazy Code</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Crazy Code">
-<meta property="og:url" content="https://bingjian1819.github.io/archives/index.html">
+  <meta name="description" content="默认 Sublime Text 是不支持 Markdown 语法高亮和预览的，对于万能的 Sublime Text，这点事情一定有插件能解决。 Sublime Text 3 安装Package Control，挺不能理解为什么不默认含在 app 里快捷键**ctrl+&#96;**或者 View &gt; Show Console 菜单打开控制台 12345import urllib.request,os">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Sublime Text 写 Markdown">
+<meta property="og:url" content="https://bingjian1819.github.io/2019/01/01/%E4%BD%BF%E7%94%A8Sublime/index.html">
 <meta property="og:site_name" content="Crazy Code">
+<meta property="og:description" content="默认 Sublime Text 是不支持 Markdown 语法高亮和预览的，对于万能的 Sublime Text，这点事情一定有插件能解决。 Sublime Text 3 安装Package Control，挺不能理解为什么不默认含在 app 里快捷键**ctrl+&#96;**或者 View &gt; Show Console 菜单打开控制台 12345import urllib.request,os">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/51530583gw1eehp8t8zkfj20r60jzgo9.jpg">
+<meta property="article:published_time" content="2019-01-01T05:58:03.000Z">
+<meta property="article:modified_time" content="2021-09-03T14:19:36.017Z">
 <meta property="article:author" content="Bingjian Lin">
+<meta property="article:tag" content="开发工具">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/51530583gw1eehp8t8zkfj20r60jzgo9.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Crazy Code" type="application/atom+xml">
   
@@ -69,106 +76,67 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/01/react/" class="archive-article-date">
-  <time class="dt-published" datetime="2020-03-01T05:58:03.000Z" itemprop="datePublished">Mar 1</time>
+        <section id="main"><article id="post-使用Sublime" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/01/01/%E4%BD%BF%E7%94%A8Sublime/" class="article-date">
+  <time class="dt-published" datetime="2019-01-01T05:58:03.000Z" itemprop="datePublished">2019-01-01</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/react/">react 学习</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      使用 Sublime Text 写 Markdown
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
+    <div class="e-content article-entry" itemprop="articleBody">
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/12/01/webpack/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-12-01T05:58:03.000Z" itemprop="datePublished">Dec 1</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/01/webpack/">webpack 学习</a>
-    </h1>
-  
+        <p>默认 Sublime Text 是不支持 Markdown 语法高亮和预览的，对于万能的 Sublime Text，这点事情一定有插件能解决。</p>
+<p>Sublime Text 3 安装<code>Package Control</code>，挺不能理解为什么不默认含在 app 里<br>快捷键**ctrl+`**或者 View &gt; Show Console 菜单打开控制台</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request,os;</span><br><span class="line">pf=&#x27;Package Control.sublime-package&#x27;;</span><br><span class="line">ipp=sublime.installed_packages_path();</span><br><span class="line">urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));</span><br><span class="line">open(os.path.join(ipp,pf),&#x27;wb&#x27;).write(urllib.request.urlopen(&#x27;http://sublime.wbond.net/&#x27;+pf.replace(&#x27; &#x27;,&#x27;%20&#x27;)).read())</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/09/14/node%E5%A4%A7%E7%BA%B2/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-09-14T15:27:13.000Z" itemprop="datePublished">Sep 14</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/14/node%E5%A4%A7%E7%BA%B2/">node 学习</a>
-    </h1>
-  
+<p>安好重启后，用万能快捷键<code>Ctrl+Shift+P</code>，调出菜单<code>Package Control Install</code>，再输入<code>Markdown</code>关键字，就能发现很多 Markdown 插件。<br>经过反复尝试，还是一个叫<code>Markdown Editing</code>的比较好使，直接使编辑器在编辑时所见即所得，只是这个默认灰色的颜色…</p>
+<span id="more"></span>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/01/01/%E4%BD%BF%E7%94%A8Sublime/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-01-01T05:58:03.000Z" itemprop="datePublished">Jan 1</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/01/%E4%BD%BF%E7%94%A8Sublime/">使用 Sublime Text 写 Markdown</a>
-    </h1>
-  
+<p><img src="http://ww4.sinaimg.cn/large/51530583gw1eehp8t8zkfj20r60jzgo9.jpg"></p>
+<div style="font-size:18px;MARGIN-TOP: 30px;"><a href="/about">商务洽谈</a></div>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bingjian1819.github.io/2019/01/01/%E4%BD%BF%E7%94%A8Sublime/" data-id="ckt4g6awe0005av6eat3agmbx" data-title="使用 Sublime Text 写 Markdown" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" rel="tag">开发工具</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/14/node%E5%A4%A7%E7%BA%B2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          node 学习
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
